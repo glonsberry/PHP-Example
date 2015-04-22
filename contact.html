@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  
+      <!-- Bootstrap Core CSS -->
+      <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom Fonts -->
+      <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  
+<h1>Contact Us</h1>
+   <h3 style="color:#FF6633;"><?php echo $_GET[msg];?></h3>
+   <hr>
+                                                    
+<form name="enq" method="post" action="email/" onsubmit="return validation();">
+<fieldset>
+    
+<input type="text" name="name" id="name" value=""  class="input-block-level" placeholder="Name" />
+<input type="text" name="email" id="email" value="" class="input-block-level" placeholder="Email" />
+<textarea rows="11" name="message" id="message" class="input-block-level" placeholder="Comments"></textarea>
+   
+<div class="actions">
+<input type="submit" value="Send Your Message" name="submit" id="submitButton" class="btn btn-info pull-right" title="Click here to submit your message!" />
+</div>
+  
+</fieldset>
+</form> 
+
+</body>
+</html>
